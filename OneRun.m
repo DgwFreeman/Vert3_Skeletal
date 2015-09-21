@@ -84,7 +84,7 @@ X = M\EndVeccore;
 %% Do every step.
 
 for iStep = 1:NSTEPS
-    TFstate = DispatchCaRegCoop(Tm_Type, NACT, NTn, TFstate, Tn, dt, CoopPass, TFRatePass, Ca, iCa, TnKO);
+    TFstate = CaRegRewrite(NACT, NTn, TFstate, Tn, dt, CoopPass, TFRatePass, Ca, TnKO);
     if iStep>=StepRecord
         %% If we want to keep track of time-on - only at end of sim, where we also will average the steady-state information
         [Prior_TFstate, Binder_3] = Time_On_Calculator(X, TFstate, Prior_TFstate, Binder_3, StepRecord, iStep, thermochem.reach, kxscaler);
