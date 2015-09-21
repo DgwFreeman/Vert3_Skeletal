@@ -1,5 +1,3 @@
-This file is written in [Markdown](http://daringfireball.net/projects/markdown/), a simple presentation format that is rendered to HTML. The format is intended to be human-readable text even without rendering, and can be opened fine in Notepad, MATLAB's editor, whatever.
-
 # Vert3_Simple
 
 Vert3_Simple is a simulation of muscle contraction on the sub-sarcomere level with emphasis on:
